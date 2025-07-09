@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freemial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Fredoka', sans-serif;
+      background: linear-gradient(135deg, #e3fdf5, #ffe6fa);
+      color: #2b2b2b;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+    .logo {
+      max-width: 120px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      color: #444;
+      margin: 0.5rem 0 2rem;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .btn {
+      padding: 0.8rem 1.5rem;
+      border-radius: 9999px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .primary {
+      background-color: #44aa77;
+      color: white;
+    }
+    .secondary {
+      background-color: white;
+      border: 2px solid #44aa77;
+      color: #44aa77;
+    }
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .how-it-works {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+    }
+    .how-it-works .step {
+      flex: 1;
+    }
+    @media(min-width: 700px) {
+      .how-it-works {
+        flex-direction: row;
+      }
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    .comparison-table th, .comparison-table td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      text-align: center;
+    }
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .screenshots img {
+      width: 180px;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 2rem 1rem;
+      background: #f5f5f5;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="freemial-logo.png" alt="Freemial Logo" class="logo" />
+    <h1>Freemial</h1>
+    <p class="tagline">Your Temial, Your Rules – Locally Brewed, Locally Hosted</p>
+    <div class="buttons">
+      <button class="btn primary">Get Started</button>
+      <button class="btn secondary">How It Works</button>
+    </div>
+  </header>
+
+  <section>
+    <h2>How It Works</h2>
+    <div class="how-it-works">
+      <div class="step">
+        <h3>🧰 Install Freemial</h3>
+        <p>Drop in the local service replacement. No cloud strings attached.</p>
+      </div>
+      <div class="step">
+        <h3>🔌 Connect Your Temial</h3>
+        <p>Plug in your machine and point it to your new localhost tea wizard.</p>
+      </div>
+      <div class="step">
+        <h3>🍵 Brew With Freedom</h3>
+        <p>All your favorite teas, still perfectly steeped.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why Freemial?</h2>
+    <table class="comparison-table">
+      <tr>
+        <th></th>
+        <th>Temial Cloud</th>
+        <th>Freemial</th>
+      </tr>
+      <tr>
+        <td>Local Control</td>
+        <td>❌</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>Privacy Respect</td>
+        <td>❌</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>Cute Factor</td>
+        <td>👁👄👁</td>
+        <td>🥺👉👈</td>
+      </tr>
+      <tr>
+        <td>Open Source</td>
+        <td>❌</td>
+        <td>✅</td>
+      </tr>
+    </table>
+    <p style="text-align:center; margin-top: 1rem; font-style: italic;">
+      "It's your tea. It should talk to your server, not someone else's."
+    </p>
+  </section>
+
+  <section>
+    <h2>Screenshots / Demo</h2>
+    <div class="screenshots">
+      <img src="screenshot-dashboard.png" alt="Dashboard Screenshot" />
+      <img src="screenshot-teas.png" alt="Teas Catalog Screenshot" />
+      <img src="screenshot-logs.png" alt="Logs Screenshot" />
+    </div>
+  </section>
+
+  <section>
+    <h2>Get Freemial</h2>
+    <ul>
+      <li>✅ Prebuilt Binaries (Linux, macOS)</li>
+      <li>🐳 Docker Image</li>
+      <li>👨‍💻 <a href="#">View on GitHub</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 Freemial Project — Built with ☕ and 🐧
+  </footer>
+</body>
+</html>
