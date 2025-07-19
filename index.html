@@ -111,12 +111,12 @@
     <h1>Freemial</h1>
     <p class="tagline">Your Temial, Your Rules – Locally Brewed, Locally Hosted</p>
     <div class="buttons">
-      <button class="btn primary">Get Started</button>
-      <button class="btn secondary">How It Works</button>
+      <a href="#get-started" class="btn primary">Get Started</a>
+      <a href="#how-it-works" class="btn secondary">How It Works</a>
     </div>
   </header>
 
-  <section>
+  <section id="how-it-works">
     <h2>How It Works</h2>
     <div class="how-it-works">
       <div class="step">
@@ -168,21 +168,34 @@
     </p>
   </section>
 
-  <section>
-    <h2>Screenshots / Demo</h2>
-    <div class="screenshots">
-      <img src="screenshot-dashboard.png" alt="Dashboard Screenshot" />
-      <img src="screenshot-teas.png" alt="Teas Catalog Screenshot" />
-      <img src="screenshot-logs.png" alt="Logs Screenshot" />
-    </div>
+  <section id="get-started">
+    <h2>Get Started</h2>
+    <ul>
+      <li>
+        Run <a href="https://www.npmjs.com/package/@freemial/server">the Freemial Server</a>
+      </li>
+      <li>
+        Connect your Temial using <a href="https://www.npmjs.com/package/@freemial/cli">our CLI</a>
+      </li>
+      <li>
+        Enjoy your tea with full control and privacy
+      </li>
+    </ul>
   </section>
 
   <section>
-    <h2>Get Freemial</h2>
+    <h2>Get Involved</h2>
     <ul>
-      <li>✅ Prebuilt Binaries (Linux, macOS)</li>
-      <li>🐳 Docker Image</li>
-      <li>👨‍💻 <a href="#">View on GitHub</a></li>
+      <li>Build using the <a href="https://www.npmjs.com/package/@freemial/connect">@freemial/connect library</a></li>
+      <li>Love reverse engineering? Read <a href="https://github.com/freemial/freemial-ts/blob/HEAD/packages/connect/technical-docs.md">the technical documentation</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Built using Freemial:</h2>
+    <ul>
+      <li><a href="https://github.com/freemial/freemial-server-go">Golang Freemial Server</a></li>
+      <li><a href="https://github.com/freemial/temial-buddy">Temial Buddy</a></li>
     </ul>
   </section>
 
