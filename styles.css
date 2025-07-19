@@ -1,3 +1,15 @@
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
 body {
     margin: 0;
     font-family: 'Fredoka', sans-serif;
@@ -40,7 +52,7 @@ body {
   }
   .primary, .primary:hover {
     background-color: #44aa77;
-    color: white;
+    color: white !important;
   }
   .secondary, .secondary:hover {
     background-color: white;
@@ -105,7 +117,7 @@ body {
     text-align: center;
     font-size: 1.1rem;
     color: #666;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     font-style: italic;
   }
   
@@ -113,27 +125,27 @@ body {
   .get-started-section {
     background: linear-gradient(135deg, #f8fdff, #f0f9ff);
     border-radius: 1rem;
-    padding: 3rem 2rem;
-    margin: 3rem auto;
+    padding: 2rem 1.5rem;
+    margin: 2rem auto;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
   }
   
   .steps-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
   }
   
   .step-card {
     background: white;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-    margin-top: 20px;
+    margin-top: 15px;
   }
   
   .step-card:hover {
@@ -215,21 +227,21 @@ body {
   .get-involved-section {
     background: linear-gradient(135deg, #fff8f0, #fef7ed);
     border-radius: 1rem;
-    padding: 3rem 2rem;
-    margin: 3rem auto;
+    padding: 2rem 1.5rem;
+    margin: 2rem auto;
   }
   
   .involvement-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
   }
   
   .involvement-card {
     background: white;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     transition: transform 0.3s ease;
   }
@@ -332,21 +344,21 @@ body {
   .built-with-section {
     background: linear-gradient(135deg, #f0fff4, #f7fffa);
     border-radius: 1rem;
-    padding: 3rem 2rem;
-    margin: 3rem auto;
+    padding: 2rem 1.5rem;
+    margin: 2rem auto;
   }
   
   .projects-showcase {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
   }
   
   .project-card {
     background: white;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
     border: 1px solid #e9ecef;
@@ -486,8 +498,8 @@ body {
   
   .showcase-footer {
     text-align: center;
-    margin-top: 3rem;
-    padding: 2rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
     background: rgba(68, 170, 119, 0.1);
     border-radius: 1rem;
   }
@@ -509,11 +521,253 @@ body {
     border-bottom-color: #44aa77;
   }
   
+  /* How It Works Section */
+  .how-it-works-section {
+    background: linear-gradient(135deg, #fef3e2, #fff8f0);
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    margin: 2rem auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  
+  .workflow-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .workflow-step {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .workflow-step:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  }
+  
+  .workflow-icon {
+    flex-shrink: 0;
+  }
+  
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .icon-circle.install {
+    background: linear-gradient(135deg, #ff9a9e, #fecfef);
+  }
+  
+  .icon-circle.connect {
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+  }
+  
+  .icon-circle.brew {
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  }
+  
+  .icon-emoji {
+    font-size: 2rem;
+  }
+  
+  .workflow-content {
+    flex: 1;
+  }
+  
+  .workflow-content h3 {
+    margin: 0 0 0.5rem 0;
+    color: #2b2b2b;
+    font-size: 1.4rem;
+  }
+  
+  .workflow-content p {
+    margin: 0 0 1rem 0;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .workflow-details {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .detail-tag {
+    background: #f8f9fa;
+    color: #495057;
+    padding: 0.3rem 0.7rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    border: 1px solid #dee2e6;
+  }
+  
+  .workflow-arrow {
+    font-size: 2rem;
+    color: #44aa77;
+    font-weight: bold;
+    margin-left: auto;
+  }
+  
+  /* Why Freemial Section */
+  .why-freemial-section {
+    background: linear-gradient(135deg, #e8f5e8, #f0fff0);
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    margin: 2rem auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  
+  .comparison-container {
+    margin-top: 1.5rem;
+  }
+  
+  .comparison-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .comparison-title h3 {
+    color: #2b2b2b;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .comparison-title p {
+    color: #666;
+    margin: 0;
+  }
+  
+  .comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .comparison-feature {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .comparison-feature:hover {
+    transform: translateY(-3px);
+  }
+  
+  .feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .comparison-feature h4 {
+    color: #2b2b2b;
+    margin: 0 0 1.5rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .feature-comparison {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .option.cloud {
+    background: #fff5f5;
+    border: 1px solid #fed7d7;
+  }
+  
+  .option.freemial {
+    background: #f0fff4;
+    border: 1px solid #c6f6d5;
+  }
+  
+  .option-label {
+    font-weight: 600;
+    color: #2b2b2b;
+  }
+  
+  .option-status {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .option-status.yes {
+    color: #38a169;
+  }
+  
+  .option-status.no {
+    color: #e53e3e;
+  }
+  
+  .option-status.neutral {
+    color: #d69e2e;
+  }
+  
+  .testimonial {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .testimonial-content {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .quote-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #2b2b2b;
+    margin: 0 0 1rem 0;
+    line-height: 1.6;
+  }
+  
+  .testimonial-author {
+    color: #666;
+    font-weight: 600;
+  }
+  
   /* Responsive Design */
   @media (max-width: 768px) {
     .steps-container,
     .involvement-grid,
-    .projects-showcase {
+    .projects-showcase,
+    .comparison-grid {
       grid-template-columns: 1fr;
     }
     
@@ -538,5 +792,21 @@ body {
     
     .project-status {
       margin-left: 0;
+    }
+    
+    .workflow-step {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .workflow-arrow {
+      transform: rotate(90deg);
+      margin: 1rem 0;
+    }
+    
+    .option {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
     }
   }
