@@ -23,6 +23,11 @@ body {
   .logo {
     max-width: 120px;
     margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.05) rotate(2deg);
   }
   h1 {
     font-size: 2.5rem;
@@ -760,6 +765,45 @@ body {
   .testimonial-author {
     color: #666;
     font-weight: 600;
+  }
+  
+  /* Logo Enhancements */
+  .testimonial-avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-logo {
+    width: 40px;
+    height: auto;
+    padding: 8px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid #e9ecef;
+  }
+  
+  .testimonial-logo:hover {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+  
+  .footer-logo {
+    width: 24px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-logo:hover {
+    transform: scale(1.2) rotate(10deg);
   }
   
   /* Responsive Design */
