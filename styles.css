@@ -823,6 +823,9 @@ body {
     .action-btn,
     .project-btn {
       width: 100%;
+      min-width: unset;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
     
     .community-stats {
@@ -831,6 +834,17 @@ body {
     
     .project-header {
       flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    
+    .project-meta {
+      text-align: center;
+      width: 100%;
+    }
+    
+    .project-meta h3,
+    .project-type {
       text-align: center;
     }
     
@@ -852,5 +866,43 @@ body {
       flex-direction: column;
       gap: 0.5rem;
       text-align: center;
+    }
+    
+    /* Fix button overflow on small screens */
+    .step-card,
+    .involvement-card,
+    .comparison-feature {
+      overflow: hidden;
+    }
+    
+    .project-card {
+      overflow: visible;
+    }
+    
+    .project-card .project-actions {
+      overflow: hidden;
+    }
+    
+    .involvement-actions {
+      gap: 0.8rem;
+    }
+    
+    .project-actions {
+      gap: 0.8rem;
+    }
+    
+    /* Ensure buttons don't exceed card width */
+    .action-btn {
+      font-size: 0.85rem;
+      padding: 0.6rem 1rem;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    
+    .project-btn {
+      font-size: 0.85rem;
+      padding: 0.6rem 1.2rem;
+      text-align: center;
+      box-sizing: border-box;
     }
   }
